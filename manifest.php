@@ -90,7 +90,6 @@ return array(
             \oat\taoProctoring\scripts\install\RegisterProctoringRunnerService::class,
             \oat\taoProctoring\scripts\install\SetupProctorCsvImporter::class,
             \oat\taoProctoring\scripts\install\RegisterProctorAttemptService::class,
-            \oat\taoProctoring\scripts\install\RegisterProctoringRunnerService::class,
             RegisterProctoringDeliveryDeleteService::class,
         ),
         'rdf' => array(
