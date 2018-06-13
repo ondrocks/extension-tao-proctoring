@@ -709,16 +709,16 @@ class Updater extends common_ext_ExtensionUpdater
             $this->setVersion('8.13.1');
         }
 
-        $this->skip('8.13.1', '8.13.2');
+        $this->skip('8.13.1', '8.13.3');
 
-        if ($this->isVersion('8.13.2')){
+        if ($this->isVersion('8.13.3')){
             /** @var DeliveryDeleteService $deleteDelivery */
             $deleteDelivery        = $this->getServiceManager()->get(DeliveryDeleteService::SERVICE_ID);
             $proctorDeleteDelivery = new ProctoringDeliveryDeleteService($deleteDelivery->getOptions());
 
             $this->getServiceManager()->register(DeliveryDeleteService::SERVICE_ID, $proctorDeleteDelivery);
 
-            $this->setVersion('8.13.3');
+            $this->setVersion('8.13.4');
         }
     }
 }
